@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "grave:staff1"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"  s",
+			" d",
+			"d "
+		],
+		"key": {
+			"d": {
+				"item": "grave:darksteel_ingot"
+			},
+			"s": {
+				"item": "grave:spectral_eonite_ingot"
+			}
+		},
+		"result": {
+			"item": "grave:spectral_eonite_staff",
+			"count": 1
+		}
+	}
+}

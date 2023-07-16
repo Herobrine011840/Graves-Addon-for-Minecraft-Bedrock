@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "grave:dark_brick"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ddd",
+			"dDd",
+			"ddd"
+		],
+		"key": {
+			"d": {
+				"item": "deepslate_bricks"
+			},
+			"D": {
+				"item": "grave:darksteel_ingot"
+			}
+		},
+		"result": {
+			"item": "grave:dark_bricks",
+			"count": 8
+		}
+	}
+}

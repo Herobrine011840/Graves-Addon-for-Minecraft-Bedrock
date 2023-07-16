@@ -1,0 +1,32 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "grave:gravestone"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"sds",
+			"dDd",
+			"ddd"
+		],
+		"key": {
+			"d": {
+				"item": "stone"
+			},
+			"D": {
+				"item": "grave:darksteel_ingot"
+			},
+			"s": {
+				"item": "stone_block_slab4",
+				"data": 2
+			}
+		},
+		"result": {
+			"item": "grave:gravestone",
+			"count": 1
+		}
+	}
+}

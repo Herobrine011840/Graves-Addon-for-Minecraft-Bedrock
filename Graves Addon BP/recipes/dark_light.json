@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "grave:dark_light"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ded",
+			"eee",
+			"ded"
+		],
+		"key": {
+			"d": {
+				"item": "grave:darksteel_ingot"
+			},
+			"e": {
+				"item": "grave:spectral_eonite_nugget"
+			}
+		},
+		"result": {
+			"item": "grave:dark_light",
+			"count": 1
+		}
+	}
+}

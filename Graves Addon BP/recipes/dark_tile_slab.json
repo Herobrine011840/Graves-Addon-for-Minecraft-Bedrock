@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "grave:dark_tile_slab"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ddd"
+		],
+		"key": {
+			"d": {
+				"item": "grave:dark_tiles"
+			}
+		},
+		"result": {
+			"item": "grave:dark_tile_slab",
+			"count": 6
+		}
+	}
+}

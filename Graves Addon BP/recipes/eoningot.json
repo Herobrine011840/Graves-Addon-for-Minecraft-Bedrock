@@ -1,0 +1,14 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "grave:eoningot"
+		},
+		"tags": [
+			"blast_furnace",
+			"furnace"
+		],
+		"input": "grave:raw_spectral_eonite",
+		"output": "grave:spectral_eonite_ingot"
+	}
+}

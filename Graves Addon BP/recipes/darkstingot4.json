@@ -1,0 +1,14 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "grave:darkstingot4"
+		},
+		"tags": [
+			"blast_furnace",
+			"furnace"
+		],
+		"input": "grave:ender_darksteel_ore",
+		"output": "grave:darksteel_ingot"
+	}
+}

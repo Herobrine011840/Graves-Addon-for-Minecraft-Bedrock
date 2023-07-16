@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "grave:gleam_brick"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ddd",
+			"dDd",
+			"ddd"
+		],
+		"key": {
+			"d": {
+				"item": "grave:dark_bricks"
+			},
+			"D": {
+				"item": "grave:shining_dust"
+			}
+		},
+		"result": {
+			"item": "grave:gleaming_dark_bricks",
+			"count": 8
+		}
+	}
+}

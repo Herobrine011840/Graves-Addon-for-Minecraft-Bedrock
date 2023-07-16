@@ -1,0 +1,31 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "grave:runed_darksteel"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ded",
+			"eDe",
+			"ded"
+		],
+		"key": {
+			"D": {
+				"item": "diamond"
+			},
+			"d": {
+				"item": "grave:darksteel_ingot"
+			},
+			"e": {
+				"item": "grave:spectral_eonite_nugget"
+			}
+		},
+		"result": {
+			"item": "grave:runed_darksteel",
+			"count": 1
+		}
+	}
+}
