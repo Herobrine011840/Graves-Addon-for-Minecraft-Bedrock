@@ -1,0 +1,52 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "grave:graveyard",
+			"places_feature": "grave:big_grave"
+		},
+		"conditions": {
+			"placement_pass": "final_pass",
+			"minecraft:biome_filter": [
+				{
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "overworld"
+						}
+					]
+				}
+			]
+		},
+		"distribution": {
+			"iterations": 1,
+			"coordinate_eval_order": "zyx",
+			"x": {
+				"distribution": "gaussian",
+				"extent": [
+					0,
+					16
+				]
+			},
+			"y": {
+				"distribution": "gaussian",
+				"extent": [
+					60,
+					108
+				]
+			},
+			"z": {
+				"distribution": "gaussian",
+				"extent": [
+					0,
+					16
+				]
+			},
+			"scatter_chance": {
+				"numerator": 1,
+				"denominator": 105
+			}
+		}
+	}
+}

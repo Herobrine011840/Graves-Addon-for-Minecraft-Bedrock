@@ -1,0 +1,15 @@
+{
+	"format_version": "1.18.20",
+	"minecraft:structure_template_feature": {
+		"description": {
+			"identifier": "grave:dark_ruin8"
+		},
+		"structure_name": "dark_ruin:pillar2",
+		"adjustment_radius": 16,
+		"facing_direction": "random",
+		"constraints": {
+			"grounded": {},
+			"unburied": {}
+		}
+	}
+}

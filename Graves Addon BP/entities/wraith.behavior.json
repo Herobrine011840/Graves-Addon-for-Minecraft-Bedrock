@@ -1,0 +1,242 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "grave:wraith",
+			"runtime_identifier": "minecraft:warden",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"emerging": {
+				"minecraft:behavior.emerge": {
+					"duration": 4.72,
+					"on_done": {
+						"event": "minecraft:emerged",
+						"target": "self"
+					}
+				}
+			},
+			"transform": {
+				"minecraft:transformation": {
+					"into": "grave:wraith_boss",
+					"keep_level": false
+				}
+			},
+			"pushable": {
+				"minecraft:pushable": {
+					"is_pushable": true,
+					"is_pushable_by_piston": true
+				}
+			}
+		},
+		"components": {
+			"minecraft:movement_sound_distance_offset": {
+				"value": 0.55
+			},
+			"minecraft:experience_reward": {
+				"on_death": "query.last_hit_by_player?4:0"
+			},
+			"minecraft:attack": {
+				"damage": 3
+			},
+			"minecraft:interact": {
+				"interactions": [
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_equipment",
+										"subject": "other",
+										"domain": "hand",
+										"value": "grave:ancient_tome"
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"event": "transform"
+						},
+						"use_item": true
+					}
+				]
+			},
+			"minecraft:vibration_listener": {},
+			"minecraft:suspect_tracking": {},
+			"minecraft:anger_level": {
+				"max_anger": 10,
+				"angry_threshold": 10,
+				"remove_targets_below_angry_threshold": true,
+				"angry_boost": 10,
+				"anger_decrement_interval": 100,
+				"default_annoyingness": 10,
+				"default_projectile_annoyingness": 10,
+				"on_increase_sounds": [],
+				"nuisance_filter": {
+					"all_of": [
+						{
+							"test": "is_family",
+							"subject": "other",
+							"operator": "not",
+							"value": "monster"
+						},
+						{
+							"test": "is_family",
+							"subject": "other",
+							"operator": "not",
+							"value": "inanimate"
+						}
+					]
+				}
+			},
+			"minecraft:is_hidden_when_invisible": {},
+			"minecraft:type_family": {
+				"family": [
+					"wraith",
+					"undead",
+					"monster",
+					"mob"
+				]
+			},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": 0
+			},
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true,
+				"avoid_water": true,
+				"avoid_damage_blocks": true
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "fall",
+					"deals_damage": false
+				}
+			},
+			"minecraft:ambient_sound_interval": {
+				"value": 2,
+				"range": 4,
+				"event_name": "ambient",
+				"event_names": []
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:collision_box": {
+				"width": 0.7,
+				"height": 1.9
+			},
+			"minecraft:health": {
+				"value": 20,
+				"max": 20
+			},
+			"minecraft:movement": {
+				"value": 0.2
+			},
+			"minecraft:knockback_resistance": {
+				"value": 0.2
+			},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:behavior.dig": {
+				"priority": 1,
+				"duration": 3.5417,
+				"idle_time": 30,
+				"vibration_is_disturbance": true,
+				"suspicion_is_disturbance": true,
+				"digs_in_daylight": true
+			},
+			"minecraft:behavior.roar": {
+				"priority": 2,
+				"duration": 0.51
+			},
+			"minecraft:behavior.melee_attack": {
+				"priority": 4,
+				"speed_multiplier": 1,
+				"melee_fov": 360
+			},
+			"minecraft:behavior.investigate_suspicious_location": {
+				"priority": 5,
+				"speed_multiplier": 0.7
+			},
+			"minecraft:behavior.sniff": {
+				"priority": 6,
+				"duration": 1.16,
+				"sniffing_radius": 24,
+				"suspicion_radius_horizontal": 6,
+				"suspicion_radius_vertical": 20,
+				"cooldown_range": [
+					5,
+					10
+				]
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 9,
+				"speed_multiplier": 0.5
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 11
+			},
+			"minecraft:physics": {},
+			"minecraft:follow_range": 30,
+			"minecraft:fire_immune": {},
+			"minecraft:nameable": {},
+			"minecraft:loot": {
+				"table": "loot_tables/wraith.json"
+			}
+		},
+		"events": {
+			"minecraft:spawn_emerging": {
+				"add": {
+					"component_groups": [
+						"emerging"
+					]
+				}
+			},
+			"minecraft:emerged": {
+				"add": {
+					"component_groups": [
+						"pushable"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"emerging"
+					]
+				}
+			},
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"pushable"
+					]
+				}
+			},
+			"on_digging_event": {
+				"remove": {
+					"component_groups": [
+						"pushable"
+					]
+				}
+			},
+			"transform": {
+				"add": {
+					"component_groups": [
+						"transform"
+					]
+				},
+				"run_command": {
+					"command": [
+						"playsound mob.wither.spawn @a ~ ~ ~ 100"
+					]
+				}
+			}
+		}
+	}
+}

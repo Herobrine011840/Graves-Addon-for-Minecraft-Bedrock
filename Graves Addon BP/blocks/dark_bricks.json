@@ -1,0 +1,17 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "grave:dark_bricks"
+		},
+		"components": {
+			"minecraft:block_light_absorption": 15,
+			"minecraft:creative_category": {
+				"category": "construction",
+				"group": "itemGroup.name.stoneBrick"
+			},
+			"minecraft:destroy_time": 1.5,
+			"minecraft:explosion_resistance": 50
+		}
+	}
+}

@@ -1,0 +1,87 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "grave:spectral_eonite_staff",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "equipment"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_durability": 200
+			},
+			"minecraft:damage": 2,
+			"minecraft:icon": {
+				"texture": "grave_spectral_eonite_staff"
+			},
+			"minecraft:enchantable": {
+				"value": 10,
+				"slot": "elytra"
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"grave:darksteel_ingot"
+						],
+						"repair_amount": "query.max_durability*0.1"
+					},
+					{
+						"items": [
+							"grave:spectral_eonite_ingot"
+						],
+						"repair_amount": "query.max_durability*0.3"
+					},
+					{
+						"items": [
+							"grave:spectral_eonite_staff"
+						],
+						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
+					}
+				]
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "grave:splash"
+				}
+			},
+			"minecraft:cooldown": {
+				"category": "staff",
+				"duration": 10
+			},
+			"minecraft:can_destroy_in_creative": true,
+			"minecraft:weapon": {
+				"on_hurt_entity": {
+					"event": "grave:update_durability"
+				}
+			}
+		},
+		"events": {
+			"grave:update_durability": {
+				"damage": {
+					"amount": 1,
+					"target": "self",
+					"type": "durability"
+				}
+			},
+			"grave:splash": {
+				"damage": {
+					"amount": 3,
+					"target": "self",
+					"type": "durability"
+				},
+				"run_command": {
+					"command": [
+						"damage @e [r=5, family=undead] 5",
+						"playsound mob.warden.sonic_boom @a ~ ~ ~ 0.2 2"
+					]
+				},
+				"swing": {}
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "grave:darksteel_nugget",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "grave_darksteel_nugget"
+			},
+			"minecraft:creative_category": {
+				"parent": "items"
+			},
+			"minecraft:max_stack_size": 64
+		}
+	}
+}

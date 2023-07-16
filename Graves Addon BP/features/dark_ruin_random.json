@@ -1,0 +1,54 @@
+{
+	"format_version": "1.18.0",
+	"minecraft:weighted_random_feature": {
+		"description": {
+			"identifier": "grave:dark_ruin_random"
+		},
+		"features": [
+			[
+				"grave:dark_ruin1",
+				3
+			],
+			[
+				"grave:dark_ruin2",
+				3
+			],
+			[
+				"grave:dark_ruin3",
+				3
+			],
+			[
+				"grave:dark_ruin4",
+				3
+			],
+			[
+				"grave:dark_ruin5",
+				1
+			],
+			[
+				"grave:dark_ruin6",
+				3
+			],
+			[
+				"grave:dark_ruin7",
+				1
+			],
+			[
+				"grave:dark_ruin8",
+				1
+			],
+			[
+				"grave:dark_ruin9",
+				1
+			],
+			[
+				"grave:dark_ruin10",
+				1
+			],
+			[
+				"grave:dark_ruin11",
+				1
+			]
+		]
+	}
+}

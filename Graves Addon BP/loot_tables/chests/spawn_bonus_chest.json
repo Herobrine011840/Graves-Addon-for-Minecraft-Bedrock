@@ -1,0 +1,180 @@
+{
+	"pools": [
+		{
+			"rolls": 5,
+			"entries": [
+				{
+					"type": "item",
+					"name": "written_book",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_book_contents",
+							"author": "Herobrine011840",
+							"title": "Graves Addon",
+							"pages": [
+								"A Guide to the Graves Addon
+
+          BLOCKS:
+
+Darksteel:
+  Darksteel is an ore found in the overworld, nether, & end. It can be mined with an iron pickaxe or better & smelted down into ingots. Graveyards & some other structures",
+  "can contain Darksteel in their chests. Darksteel can be made into Bricks and Tiles when combined with deepslate.
+
+Darksteel Lights and Runes:
+  These are decorative blocks made with darksteel and eonite. Both of these blocks can be found in Dark Ruins.",
+  "Gleaming Dark Bricks:
+  This variant of Dark Bricks can be made with Shining Dust. It is a luminous decor block. 
+
+Gravestone:
+  Gravestones can be crafted with stone & darksteel or found naturally in graveyards. If a gravestone is found
+there,",
+"then it can summon wraiths when interacting with it. If the player places a gravestone, then it can be used to set a spawn point instead of a bed.
+
+Spectral Eonite:
+  This ore is found rarely underground in the overworld or from the Demonic Wraith's drops.",
+  "It can be smelted into an ingot and then crafted into a staff when combined with Darksteel.
+
+           ITEMS:
+
+Ancient Tome:
+  This rare item can be found in graveyard chests and can be used on a wraith to spawn the Demonic Wraith.",
+  "Forgotten Sword:
+  This sword is an uncommon item found in graveyard chests, for it is a sword that has 512 durability & 10 attack damage. It can be repaired with Darksteel.
+
+Ghost Pepper:
+  This hauntingly good food item is dropped rarely from Wraiths or",
+  "Demonic Wraiths. Eating it will restore food points, and will grant Invisibility, Darkness, Resistance, Asorption, & Regeneration. Now that's one spicy pepper!
+
+Shining Dust:
+  This rare pile of grains can be found in Dark Ruin chests or dropped by the",
+  "Demonic Wraith. it is a primary ingredient in making the Gleaming Dark Bricks, which are the upgraded version of Dark Bricks.
+
+Spectral Eonite Staff:
+  This item can only be crafted with Darksteel & Spectral",
+  "Eonite. The staff can be repaired with Darksteel & Spectral Eonite Ingots. It has 200 durability and 3 attack damage. The special thing about this staff is it can be right-clicked to deal 5 damage to all undead in a 5-block range around you. This, however,",
+  "takes 3 durability off of your staff.
+
+          MOBS:
+
+Demonic Wraith:
+  This variant of the wraith can only be summoned by interacting with a wraith while holding an Ancient Tome.",
+  "STATS:
+  HP: 250,
+  Attack: 15 (Melee),
+  5 (Sonic Blast)
+  Drops: 0-1 Spectral Eonite Staff
+  0-3 Darksteel Scrap
+  0-3 Diamond
+  0-1 Spectral Eonite Ingot",
+  "Wraith:
+  This Mob can only be spawned when right-clicking a Gravestone. it is a semi-weak mob & will disappear in sunlight.
+
+STATS:
+  HP: 20
+  Attack: 3
+  Drops: 0-2 Bone
+  0-1 Darksteeel Scrap",
+  "       STRUCTURES:
+
+Graveyard:
+  This structure is found in the overworld at Y=60 to Y=108. It consists of multiple Graves with loot chests under them. Grave robbing anyone?
+
+Dark Ruins:
+  Dark Ruins are large clusters of buildings",
+  "found underground at Y=0 and lower. The buildings are primarily made up of Dark Brick variants. Night Vision potions are a must."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:stone_axe",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "minecraft:wooden_axe",
+					"weight": 1
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:stone_pickaxe",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "minecraft:wooden_pickaxe",
+					"weight": 1
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:bread",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:stick",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 12
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "grave:darksteel_nugget",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 0,
+								"max": 2
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"format_version": "1.18.0",
+	"minecraft:vegetation_patch_feature": {
+		"description": {
+			"identifier": "grave:dark_ruins"
+		},
+		"replaceable_blocks": [
+			"deepslate",
+			"gravel",
+			"tuff"
+		],
+		"ground_block": "deepslate",
+		"vegetation_feature": "grave:dark_ruin_random",
+		"surface": "floor",
+		"depth": 1,
+		"extra_deep_block_chance": 0,
+		"vertical_range": 10,
+		"vegetation_chance": 0.025,
+		"horizontal_radius": {
+			"range_min": 8,
+			"range_max": 20
+		},
+		"extra_edge_column_chance": 0
+	}
+}

@@ -1,0 +1,146 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "grave:dark_brick_slab",
+			"properties": {
+				"grave:slab": [
+					0,
+					1,
+					2
+				]
+			}
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"group": "itemGroup.name.slab",
+				"category": "construction"
+			},
+			"minecraft:destroy_time": 1.5,
+			"minecraft:on_player_placing": {
+				"event": "grave:up",
+				"target": "self",
+				"condition": "query.target_x_rotation<=0"
+			},
+			"minecraft:explosion_resistance": 50
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('grave:slab') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.slab_down",
+					"minecraft:block_light_absorption": 0,
+					"minecraft:on_interact": {
+						"event": "grave:block",
+						"target": "self",
+						"condition": "query.get_equipped_item_name('main_hand')=='dark_brick_slab'&&query.block_face==1"
+					},
+					"minecraft:entity_collision": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					},
+					"minecraft:pick_collision": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "grave_dark_bricks",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('grave:slab') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.slab_up",
+					"minecraft:block_light_absorption": 0,
+					"minecraft:on_interact": {
+						"event": "grave:block",
+						"target": "self",
+						"condition": "query.get_equipped_item_name('main_hand')=='dark_brick_slab'&&query.block_face==0"
+					},
+					"minecraft:entity_collision": {
+						"origin": [
+							-8,
+							8,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					},
+					"minecraft:pick_collision": {
+						"origin": [
+							-8,
+							8,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "grave_dark_bricks",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('grave:slab') == 2",
+				"components": {
+					"minecraft:unit_cube": {},
+					"minecraft:loot": "loot_tables/blocks/dark_brick_slab_double.json",
+					"minecraft:block_light_absorption": 15,
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "grave_dark_bricks",
+							"render_method": "opaque"
+						}
+					}
+				}
+			}
+		],
+		"events": {
+			"grave:block": {
+				"set_block_property": {
+					"grave:slab": 2
+				},
+				"decrement_stack": {},
+				"run_command": {
+					"command": [
+						"playsound use.deepslate_bricks @p ~~~ 1 1 0"
+					]
+				}
+			},
+			"grave:up": {
+				"set_block_property": {
+					"grave:slab": 1
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"format_version": "1.18.20",
+	"minecraft:structure_template_feature": {
+		"description": {
+			"identifier": "grave:dark_ruin10"
+		},
+		"structure_name": "dark_ruin:tower1",
+		"adjustment_radius": 16,
+		"facing_direction": "random",
+		"constraints": {
+			"grounded": {},
+			"unburied": {}
+		}
+	}
+}

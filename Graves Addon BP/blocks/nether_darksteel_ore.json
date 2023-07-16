@@ -1,0 +1,18 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "grave:nether_darksteel_ore"
+		},
+		"components": {
+			"minecraft:destroy_time": 0.6,
+			"minecraft:explosion_resistance": 20,
+			"minecraft:creative_category": {
+				"category": "nature",
+				"group": "itemGroup.name.ore"
+			},
+			"minecraft:block_light_absorption": 15,
+			"minecraft:loot": "loot_tables/darksteel_ore.json"
+		}
+	}
+}

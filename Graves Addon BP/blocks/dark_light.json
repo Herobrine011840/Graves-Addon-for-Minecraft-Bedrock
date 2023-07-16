@@ -1,0 +1,18 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "grave:dark_light"
+		},
+		"components": {
+			"minecraft:block_light_absorption": 15,
+			"minecraft:block_light_emission": 0.8,
+			"minecraft:creative_category": {
+				"category": "construction",
+				"group": "construction"
+			},
+			"minecraft:destroy_time": 1.6,
+			"minecraft:explosion_resistance": 70
+		}
+	}
+}
