@@ -1,0 +1,59 @@
+{
+	"num_mip_levels": 4,
+	"padding": 8,
+	"resource_pack_name": "Graves Addon",
+	"texture_name": "atlas.terrain",
+	"texture_data": {
+		"gravestone": {
+			"textures": "textures/blocks/grave"
+		},
+		"grave_darksteel_ore": {
+			"textures": "textures/blocks/darksteel_ore"
+		},
+		"grave_deepslate_darksteel_ore": {
+			"textures": "textures/blocks/deepslate_darksteel_ore"
+		},
+		"grave_darksteel_block": {
+			"textures": "textures/blocks/darksteel_block"
+		},
+		"grave_dark_bricks": {
+			"textures": "textures/blocks/dark_bricks"
+		},
+		"grave_dark_tiles": {
+			"textures": "textures/blocks/dark_tiles"
+		},
+		"grave_nether_darksteel_ore": {
+			"textures": "textures/blocks/nether_darksteel_ore"
+		},
+		"grave_ender_darksteel_ore": {
+			"textures": "textures/blocks/ender_darksteel_ore"
+		},
+		"grave_spectral_eonite_ore": {
+			"textures": "textures/blocks/spectral_eonite_ore"
+		},
+		"grave_deepslate_spectral_eonite_ore": {
+			"textures": "textures/blocks/deepslate_spectral_eonite_ore"
+		},
+		"grave_spectral_eonite_block": {
+			"textures": "textures/blocks/spectral_eonite_block"
+		},
+		"grave_gleaming_dark_bricks": {
+			"textures": "textures/blocks/gleaming_dark_bricks"
+		},
+		"grave_runed_darksteel": {
+			"textures": "textures/blocks/runed_darksteel"
+		},
+		"grave_gleaming_dark_brick_slab": {
+			"textures": "textures/blocks/gleaming_dark_bricks"
+		},
+		"grave_raw_darksteel_block": {
+			"textures": "textures/blocks/raw_darksteel_block"
+		},
+		"grave_raw_spectral_eonite_block": {
+			"textures": "textures/blocks/raw_spectral_eonite_block"
+		},
+		"grave_dark_light": {
+			"textures": "textures/blocks/dark_light"
+		}
+	}
+}

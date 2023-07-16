@@ -1,0 +1,42 @@
+{
+	"resource_pack_name": "Graves Addon",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"grave_darksteelingot": {
+			"textures": "textures/items/darksteelingot"
+		},
+		"grave_raw_darksteel": {
+			"textures": "textures/items/raw_darksteel"
+		},
+		"grave_darksteel_scrap": {
+			"textures": "textures/items/darksteel_scrap"
+		},
+		"grave_darksteel_nugget": {
+			"textures": "textures/items/darksteel_nugget"
+		},
+		"grave_raw_spectral_eonite": {
+			"textures": "textures/items/raw_spectral_eonite"
+		},
+		"grave_spectral_eonite_ingot": {
+			"textures": "textures/items/spectral_eonite_ingot"
+		},
+		"grave_forgotten_sword": {
+			"textures": "textures/items/forgotten_sword"
+		},
+		"grave_spectral_eonite_staff": {
+			"textures": "textures/items/spectral_eonite_staff"
+		},
+		"grave_ancient_tome": {
+			"textures": "textures/items/ancient_tome"
+		},
+		"grave_spectral_eonite_nugget": {
+			"textures": "textures/items/spectral_eonite_nugget"
+		},
+		"grave_shining_dust": {
+			"textures": "textures/items/shining_dust"
+		},
+		"grave_ghost_pepper": {
+			"textures": "textures/items/ghost_pepper"
+		}
+	}
+}

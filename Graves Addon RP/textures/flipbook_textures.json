@@ -1,0 +1,17 @@
+[
+    {
+        "flipbook_texture": "textures/blocks/spectral_eonite_block",
+        "atlas_tile": "grave_spectral_eonite_block",
+        "ticks_per_frame": 60
+    },
+    {
+        "flipbook_texture": "textures/blocks/gleaming_dark_bricks",
+        "atlas_tile": "grave_gleaming_dark_bricks",
+        "ticks_per_frame": 3
+    },
+    {
+        "flipbook_texture": "textures/blocks/runed_darksteel",
+        "atlas_tile": "grave_runed_darksteel",
+        "ticks_per_frame": 20
+    }
+]

@@ -1,0 +1,83 @@
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"grave:gravestone": {
+		"sound": "stone",
+		"textures": "gravestone",
+		"carried_textures": "gravestone"
+	},
+	"grave:darksteel_ore": {
+		"sound": "stone",
+		"textures": "grave_darksteel_ore"
+	},
+	"grave:deepslate_darksteel_ore": {
+		"sound": "deepslate",
+		"textures": "grave_deepslate_darksteel_ore"
+	},
+	"grave:darksteel_block": {
+		"sound": "netherite",
+		"textures": "grave_darksteel_block"
+	},
+	"grave:dark_bricks": {
+		"sound": "deepslate_bricks",
+		"textures": "grave_dark_bricks"
+	},
+	"grave:dark_tiles": {
+		"sound": "deepslate_bricks",
+		"textures": "grave_dark_tiles"
+	},
+	"grave:dark_brick_slab": {
+		"sound": "deepslate_bricks",
+		"textures": "grave_dark_bricks"
+	},
+	"grave:dark_tile_slab": {
+		"sound": "deepslate_bricks",
+		"textures": "grave_dark_tiles"
+	},
+	"grave:nether_darksteel_ore": {
+		"sound": "nether_gold_ore",
+		"textures": "grave_nether_darksteel_ore"
+	},
+	"grave:ender_darksteel_ore": {
+		"sound": "nether_gold_ore",
+		"textures": "grave_ender_darksteel_ore"
+	},
+	"grave:spectral_eonite_ore": {
+		"sound": "stone",
+		"textures": "grave_spectral_eonite_ore"
+	},
+	"grave:deepslate_spectral_eonite_ore": {
+		"sound": "deepslate",
+		"textures": "grave_deepslate_spectral_eonite_ore"
+	},
+	"grave:spectral_eonite_block": {
+		"sound": "copper",
+		"textures": "grave_spectral_eonite_block"
+	},
+	"grave:gleaming_dark_bricks": {
+		"sound": "deepslate_bricks",
+		"textures": "grave_gleaming_dark_bricks"
+	},
+	"grave:runed_darksteel": {
+		"sound": "netherite",
+		"textures": "grave_runed_darksteel"
+	},
+	"grave:gleaming_dark_brick_slab": {
+		"sound": "deepslate_bricks"
+	},
+	"grave:raw_darksteel_block": {
+		"sound": "stone",
+		"textures": "grave_raw_darksteel_block"
+	},
+	"grave:raw_spectral_eonite_block": {
+		"sound": "stone",
+		"textures": "grave_raw_spectral_eonite_block"
+	},
+	"grave:dark_light": {
+		"sound": "netherite",
+		"textures": "grave_dark_light"
+	}
+}

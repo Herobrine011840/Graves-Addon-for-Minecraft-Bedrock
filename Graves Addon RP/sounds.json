@@ -1,0 +1,97 @@
+{
+	"entity_sounds": {
+		"entities": {
+			"grave:wraith_boss": {
+				"events": {
+					"ambient": "mob.wraith.call",
+					"attack": {
+						"pitch": 0.3,
+						"sound": "mob.skeleton.hurt",
+						"volume": 1
+					},
+					"death": {
+						"pitch": 0.5,
+						"sound": "mob.horse.skeleton.death",
+						"volume": 1
+					},
+					"hurt": {
+						"pitch": [
+							0.4,
+							0.5
+						],
+						"sound": "mob.skeleton.hurt",
+						"volume": 1
+					},
+					"roar": {
+						"pitch": 1.5,
+						"sound": "mob.warden.roar",
+						"volume": 1
+					},
+					"heartbeat": {
+						"pitch": 0.6,
+						"sound": "mob.warden.heartbeat",
+						"volume": 1
+					}
+				},
+				"pitch": [
+					0.6,
+					0.7
+				],
+				"volume": 1
+			},
+			"grave:wraith": {
+				"events": {
+					"ambient": "mob.wraith.call",
+					"attack": {
+						"pitch": 0.7,
+						"sound": "mob.skeleton.hurt",
+						"volume": 1
+					},
+					"death": {
+						"pitch": 0.7,
+						"sound": "mob.horse.skeleton.death",
+						"volume": 1
+					},
+					"dig": {
+						"pitch": 1,
+						"sound": "mob.warden.dig",
+						"volume": 1.5
+					},
+					"emerge": {
+						"pitch": 1,
+						"sound": "mob.warden.dig",
+						"volume": 1.5
+					},
+					"hurt": {
+						"pitch": [
+							0.6,
+							0.7
+						],
+						"sound": "mob.skeleton.hurt",
+						"volume": 1
+					},
+					"idle": {
+						"pitch": 1,
+						"sound": "mob.horse.skeleton.idle",
+						"volume": 1
+					},
+					"roar": {
+						"pitch": 1.5,
+						"sound": "mob.warden.listening",
+						"volume": 1
+					},
+					"sniff": {
+						"pitch": 0.7,
+						"sound": "mob.allay.idle",
+						"volume": 1
+					}
+				},
+				"pitch": [
+					0.8,
+					1
+				],
+				"volume": 1
+			}
+		}
+	}
+}
