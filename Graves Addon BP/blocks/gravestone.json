@@ -1,0 +1,261 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "grave:gravestone",
+			"properties": {
+				"bridge:pillar_axis": [
+					0,
+					1,
+					2
+				],
+				"bridge:can_summon": [
+					0,
+					1
+				],
+				"bridge:summoning": [
+					0,
+					1,
+					2
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('bridge:summoning') == 0",
+				"components": {
+					"minecraft:on_interact": {
+						"event": "summon"
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('bridge:summoning') == 1",
+				"components": {
+					"minecraft:ticking": {
+						"looping": false,
+						"on_tick": {
+							"event": "spawn"
+						},
+						"range": [
+							5,
+							5
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('bridge:summoning') == 2",
+				"components": {
+					"minecraft:ticking": {
+						"looping": false,
+						"range": [
+							0,
+							0
+						],
+						"on_tick": {
+							"event": "spawned"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('bridge:can_summon') == 0",
+				"components": {
+					"minecraft:on_interact": {
+						"event": "summon"
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('bridge:can_summon') == 1",
+				"components": {
+					"minecraft:on_interact": {
+						"event": "set_spawn"
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('bridge:pillar_axis') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.grave",
+					"minecraft:entity_collision": {
+						"origin": [
+							-7,
+							0,
+							-4
+						],
+						"size": [
+							14,
+							15,
+							8
+						]
+					},
+					"minecraft:pick_collision": {
+						"origin": [
+							-7,
+							0,
+							-4
+						],
+						"size": [
+							14,
+							15,
+							8
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('bridge:pillar_axis') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.grave",
+					"minecraft:entity_collision": {
+						"origin": [
+							-7,
+							0,
+							-4
+						],
+						"size": [
+							14,
+							15,
+							8
+						]
+					},
+					"minecraft:pick_collision": {
+						"origin": [
+							-7,
+							0,
+							-4
+						],
+						"size": [
+							14,
+							15,
+							8
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('bridge:pillar_axis') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.grave2",
+					"minecraft:entity_collision": {
+						"origin": [
+							-4,
+							0,
+							-7
+						],
+						"size": [
+							8,
+							15,
+							14
+						]
+					},
+					"minecraft:pick_collision": {
+						"origin": [
+							-4,
+							0,
+							-7
+						],
+						"size": [
+							8,
+							15,
+							14
+						]
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "gravestone",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:on_player_placing": {
+				"event": "on_player_placing",
+				"target": "self"
+			},
+			"minecraft:block_light_absorption": 0,
+			"minecraft:creative_category": {
+				"category": "items",
+				"group": "items"
+			},
+			"minecraft:explosion_resistance": 20,
+			"minecraft:destroy_time": 2
+		},
+		"events": {
+			"on_player_placing": {
+				"set_block_property": {
+					"bridge:pillar_axis": "math.floor(query.block_face/2)",
+					"bridge:can_summon": 1
+				}
+			},
+			"set_spawn": {
+				"run_command": {
+					"command": [
+						"spawnpoint @p"
+					]
+				},
+				"play_sound": {
+					"sound": "block.grindstone.use"
+				}
+			},
+			"summon": {
+				"set_block_property": {
+					"bridge:summoning": 1
+				},
+				"run_command": {
+					"command": [
+						"playsound mob.wraith.call @a [r=30] ~ ~ ~"
+					]
+				}
+			},
+			"spawn": {
+				"set_block_property": {
+					"bridge:summoning": 2
+				}
+			},
+			"spawned": {
+				"randomize": [
+					{
+						"weight": 1,
+						"run_command": {
+							"command": [
+								"summon grave:wraith ~1 ~ ~ ~ ~ minecraft:spawn_emerging"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"run_command": {
+							"command": [
+								"summon grave:wraith ~-1 ~ ~ ~ ~ minecraft:spawn_emerging"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"run_command": {
+							"command": [
+								"summon grave:wraith ~ ~ ~-1 ~ ~ minecraft:spawn_emerging"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"run_command": {
+							"command": [
+								"summon grave:wraith ~ ~ ~1 ~ ~ minecraft:spawn_emerging"
+							]
+						}
+					}
+				],
+				"set_block_property": {
+					"bridge:summoning": 0
+				}
+			}
+		}
+	}
+}
