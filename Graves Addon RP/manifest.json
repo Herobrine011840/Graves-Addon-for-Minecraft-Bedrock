@@ -1,0 +1,45 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Herobrine011840"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.7.5"
+			],
+			"dash": [
+				"github:bridge-core/dash-compiler#8fa35c73292f6382747d0f411fca26431a6d2c8e"
+			],
+			"blockbench_entity_wizard": [
+				"1.0.9"
+			]
+		}
+	},
+	"header": {
+		"name": "Graves Addon",
+		"description": "Graves Addon",
+		"min_engine_version": [
+			1,
+			20,
+			30
+		],
+		"uuid": "4b008708-fb54-475e-b89f-1d81dc550455",
+		"version": [
+			1,
+			1,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "21384ca9-88d7-42a6-9674-93ef76076840",
+			"version": [
+				1,
+				1,
+				0
+			]
+		}
+	]
+}
